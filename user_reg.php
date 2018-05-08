@@ -21,4 +21,5 @@
 </body>
 </html>
 <?php
-var_dump(date("Y-m-d H:i:s"));
+date_default_timezone_set('Asia/shanghai');
+//var_dump(date("Y-m-d H:i:s"));
