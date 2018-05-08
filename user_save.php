@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('Asia/shanghai'); 
 error_reporting(E_ALL & ~E_NOTICE);
 
 // 获取输入参数,去掉左右的空白符
