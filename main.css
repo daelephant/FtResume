@@ -14,6 +14,18 @@ body {
     font-weight: 400;
 }
 
+.container a
+{
+    color:rgb(11, 123, 197);
+    text-decoration: none;
+}
+
+.container a:hover
+{
+    text-decoration: underline;
+}
+
+
 .container input[type='text'],.container input[type='password']{
     padding: 10px;
     border:2px solid #eee;
@@ -29,11 +41,85 @@ body {
     font-size: 14px;
 }
 
-.middle
+.middle,.form_info
 {
     width:300px;
 }
 .middle-button
 {
     width:100px!important;
+}
+/*用伪元素来处理，当空的时候不显示*/
+.form_info:not(:empty){
+    padding: 10px;
+    font-size: 14px;
+    background-color: bisque;
+}
+
+.container textarea
+{
+    padding:10px;
+    border:2px solid #eee;
+    font-size: 14px;
+    min-height:200px;
+}
+
+.full
+{
+    width:100%;
+}
+
+.container *::placeholder
+{
+    color: #ccc;
+}
+
+
+.resume_list
+{
+    padding:0px;
+    font-size: 16px!important;
+}
+
+
+.resume_list li
+{
+    margin:0px;
+    /*display: block;*/
+    list-style-image: url(image/portrait.png);
+}
+
+.resume_list li .title
+{
+    display: inline-block;
+    border-bottom:2px solid #eee;
+    text-decoration: none;
+    color:rgb( 0 , 152 , 255 );
+    line-height: 30px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.resume_list li a:not(.title)
+{
+    padding-left:10px;
+    display: inline-block;
+}
+
+.resume_list li
+{
+    vertical-align: middle;
+}
+
+.resume_add
+{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb( 0 , 152 , 255 );
+    font-size: 16px;
+    margin-top:20px;
+}
+.resume_add img
+{
+    max-height:14px;
 }
