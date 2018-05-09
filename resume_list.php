@@ -13,7 +13,7 @@ try {
 //设置PDO报错详情，不然默认的是什么也不做，这样设置后会检测到PDO连接错误信息
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "SELECT `id`,`uid`,`title`,`created_at` FROM `resume` WHERE `uid` = ? LIMIT 1";
+    $sql = "SELECT `id`,`uid`,`title`,`created_at` FROM `resume` WHERE `uid` = ?  AND `is_deleted` != 1";
     $sth = $dbh->prepare($sql);
     $ret = $sth->execute([intval($_SESSION['uid'])]);
     $resume_list = $sth->fetchAll(PDO::FETCH_ASSOC);//二维数组
@@ -48,7 +48,7 @@ catch (Exception $exception)
                     <a href="resume_detail.php?id=<?=$item['id'];?>" class="title middle" target="_blank"><?=$item['title']?></a>
                     <a href="resume_detail.php?id=<?=$item['id'];?>" target="_blank"><img src="image/open_in_new.png" alt="查看"></a>
                     <a href="resume_modify.php?id=<?=$item['id'];?>"><img src="image/mode_edit.png" alt="编辑"></a>
-                    <a href="resume_remove.php?id=<?=$item['id'];?>"><img src="image/close.png" alt="删除"></a>
+                    <a href="javascript:confirm_delete('<?=$item['id'];?>');void(0);"><img src="image/close.png" alt="删除"></a>
                 </li>
             <?php endforeach;?>
         </ul>

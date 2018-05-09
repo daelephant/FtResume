@@ -9,3 +9,14 @@ function send_form(form_id) {
             $("#"+form_id+"_notice").html(data);
     });
 }
+
+function confirm_delete(id) {
+    //resume_remove.php?id=
+    // alert(id);
+    if(confirm("确定要删除这份简历么？"))
+    {
+        $.post('resume_remove.php?id='+id,null,function (data) {
+           //
+        });
+    }
+}
