@@ -1,5 +1,4 @@
 body {
-    margin-top: 160px;
     font-family: "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, Georgia, tahoma, arial, simsun, 宋体;
 }
 
@@ -74,6 +73,17 @@ body {
     color: #ccc;
 }
 
+.container .cancel-button
+{
+    padding:10px;
+    background-color:rgb(153, 153, 153);
+    border:0px;
+    color:white;
+    font-size: 14px;
+    margin-left:10px;
+    text-align: center;
+}
+
 
 .resume_list
 {
@@ -85,8 +95,8 @@ body {
 .resume_list li
 {
     margin:0px;
-    /*display: block;*/
-    list-style-image: url(image/portrait.png);
+    display: block;
+    /*list-style-image: url(image/portrait.png);*/
 }
 
 .resume_list li .title
@@ -123,3 +133,54 @@ body {
 {
     max-height:14px;
 }
+
+
+.headbox
+{
+    min-height:80px;
+    /* border-bottom:1px solid red; */
+    clear:both;
+}
+
+.headbox a
+{
+    color: rgb( 0 , 152 , 255 );
+}
+
+.headbox .logo
+{
+    float:left;
+
+}
+
+.headbox .menu
+{
+    float:right;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+}
+
+.headbox .menu > li
+{
+    display: inline-block;
+}
+
+.menu_square
+{
+    display: inline-block;
+    background-color: #ccc;
+    width:14px;
+    height: 14px;
+    margin-right:5px;
+}
+
+.menu_square_large
+{
+    display: inline-block;
+    background-color: #ccc;
+    width:24px;
+    height: 24px;
+    margin-right:5px;
+}
+

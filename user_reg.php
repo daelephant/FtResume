@@ -12,6 +12,8 @@
 </head>
 <body>
     <div class="container">
+        <!--引入头部导航-->
+        <?php $is_login=false;include 'header.php';?>
         <h1>用户注册</h1>
         <form action="user_save.php" id="form_reg" method="post" onsubmit="send_form('form_reg');return false;">
             <div id="form_reg_notice" class="form_info"></div>

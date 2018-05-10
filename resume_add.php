@@ -26,7 +26,7 @@ if(intval($_SESSION['uid']) < 1)
             <div id="form_resume_notice" class="form_info full"></div>
             <p><input type="text" name="title" placeholder="简历名称" class="full"/></p>
             <p><textarea name="content" id="" class="full" placeholder="写入简历内容，支持 Markdown 语法"></textarea> </p>
-            <p><input type="submit" value="保存简历" class="middle-button"></p>
+            <p><input type="submit" value="保存简历" class="middle-button"><input type="button"  value="返回" class="middle-button cancel-button" onclick="history.back(1);void(0); "></p>
         </form>
     </div>
 </body>
