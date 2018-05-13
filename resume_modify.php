@@ -27,7 +27,7 @@ try {
     $ret = $sth->execute([$id]);
     $resume = $sth->fetch(PDO::FETCH_ASSOC);
 
-    if($resume['id'] != $_SESSION['uid']) die("只能修改自己的简历");
+    if($resume['uid'] != $_SESSION['uid']) die("只能修改自己的简历");
 
 }
 catch (Exception $exception)
