@@ -13,7 +13,7 @@ if(intval($_SESSION['uid']) < 1)
     die("请先<a href='user_login.php'>登入</a>再添加简历");
 }
 
-$id = intval($_REQUEST);
+$id = intval($_REQUEST['id']);
 if($id<1) die("错误的简历ID");
 
 //连接数据库
@@ -55,7 +55,7 @@ catch (Exception $exception)
         <p><input type="text" name="title" placeholder="简历名称" class="full" value="<?=$resume['title'];?>"/></p>
         <p><textarea name="content" id="" class="full" placeholder="写入简历内容，支持 Markdown 语法"><?=htmlspecialchars($resume['content']);?></textarea> </p>
         <input type="hidden" name="id" value="<?=$resume['id'];?>"/>
-        <p><input type="submit" value="更新简历" class="middle-button"></p>
+        <p><input type="submit" value="更新简历" class="middle-button"><input type="button"  value="返回" class="middle-button cancel-button" onclick="history.back(1);void(0); "></p>
     </form>
 </div>
 </body>

@@ -12,6 +12,8 @@
 </head>
 <body>
     <div class="container">
+        <!--引入头部导航-->
+        <?php $is_login=false;include 'header.php';?>
         <h1>用户登入</h1>
         <form action="user_login_check.php" id="form_login" method="post" onsubmit="send_form('form_login');return false;">
             <div id="form_login_notice" class="form_info"></div>

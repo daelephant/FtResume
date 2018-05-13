@@ -19,6 +19,7 @@ try {
     $sth = $dbh->prepare($sql);
     $ret = $sth->execute([$id]);
     $resume = $sth->fetch(PDO::FETCH_ASSOC);
+    //print_r($id);
 
 }
 catch (Exception $exception)
