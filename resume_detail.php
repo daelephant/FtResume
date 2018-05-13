@@ -6,7 +6,7 @@
  * Time: 17:44
  */
 //展示页面所有人都可以看到，所以不需要验证session
-$id = intval($_REQUEST);
+$id = intval($_REQUEST['id']);
 if($id<1) die("错误的简历ID");
 
 //连接数据库
