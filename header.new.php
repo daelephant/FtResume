@@ -23,7 +23,7 @@
         <?php else:?>
             <ul class="navbar-nav">
                 <li class="nav-item <?=active_class('user_reg.php');?>"><a class="nav-link" href="user_reg.php"><span class="menu-square" ></span>注册</a></li>
-                <li class="nav-item <?=active_class('user_login.php');?>"><a class="nav-link" href="user_login.php"><span class="menu-square" ></span>登入</a></li>
+                <li class="nav-item <?=active_class('user_login.new.php');?>"><a class="nav-link" href="user_login.new.php"><span class="menu-square" ></span>登入</a></li>
             </ul>
         <?php endif; ?>
     </div>

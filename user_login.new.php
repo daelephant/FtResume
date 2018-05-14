@@ -16,7 +16,7 @@
     <body>
     <!--页面内容区域-->
     <div class="container">
-        <?php $is_login=false;include 'header.php';?>
+        <?php $is_login=false;include 'header.new.php';?>
         <div class="page-box">
             <h1 class="page-title">用户登入</h1>
             <form action="user_login_check.php" id="form_login" method="post" onsubmit="send_form('form_login');return false;">
