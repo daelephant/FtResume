@@ -57,21 +57,49 @@
     vertical-align: middle;
 }
 
-h1.page-title{
+
+.resume-add
+{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb( 0 , 152 , 255 );
+    font-size: 16px;
+    margin-top:20px;
+}
+.resume-add img
+{
+    max-height: 24px;
+    margin-bottom: 4px;
+}
+
+h1.page-title,.content h1{
     color: #ccc;
     font-weight: 400;
-    font-size: 32px;
-    margin-bottom: 20px;
-
+    font-size:32px;
+    margin-bottom:20px;
 }
 
 .page-box
 {
-    padding: 10px;
+    padding:10px;
 }
 
 .no-padding
 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.form_info:not(:empty)
+{
+    padding:10px;
+    font-size: 14px;
+    background-color: bisque;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.resume_add
+{
+    margin-top:20px;
 }

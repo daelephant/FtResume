@@ -10,16 +10,40 @@ function send_form(form_id) {
     });
 }
 
-function confirm_delete(id) {
+window.res = '';
+
+function confirm_delete() {
+
     //resume_remove.php?id=
-    // alert(id);
-    if(confirm("确定要删除这份简历么？"))
+    //  alert(id);
+    var id = window.res;
+    if(id>1)
     {
+        console.log(id);
         $.post('resume_remove.php?id='+id,null,function (data) {
            if(data == 'done')
            {
                $("#rlist-"+id).remove();
            }
         });
+
     }
+
+   //var res = $('#exampleModal').modal();
+   // console.log(window.res);
 }
+$('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    var recipient1 = button.data('whatever1') // Extract info from data-* attributes
+
+
+    console.log(recipient1);
+    window.res = recipient;
+
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    //modal.find('.modal-title').text(' ' + recipient)
+     modal.find('.modal-body').text('您确定要删除标题为“'+recipient1+'”的这条简历么？');
+})
