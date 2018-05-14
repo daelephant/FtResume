@@ -57,6 +57,21 @@
     vertical-align: middle;
 }
 
+
+.resume-add
+{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb( 0 , 152 , 255 );
+    font-size: 16px;
+    margin-top:20px;
+}
+.resume-add img
+{
+    max-height: 24px;
+    margin-bottom: 4px;
+}
+
 h1.page-title{
     color: #ccc;
     font-weight: 400;

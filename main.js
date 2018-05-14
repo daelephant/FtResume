@@ -12,9 +12,10 @@ function send_form(form_id) {
 
 function confirm_delete(id) {
     //resume_remove.php?id=
-    // alert(id);
-    if(confirm("确定要删除这份简历么？"))
+    //  alert(id);
+    if(id>1)
     {
+        console.log(id);
         $.post('resume_remove.php?id='+id,null,function (data) {
            if(data == 'done')
            {

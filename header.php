@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light no-padding" style="background-color: white;">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.php">
         <img src="image/logo.png"  height="50" alt="大象简历LOGO">
     </a>
 

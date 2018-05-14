@@ -7,7 +7,7 @@
                 </ul>
             <?php else:?>
                 <ul class="menu">
-                    <li><span class="menu_square" ></span><a href="user_reg.php">注册</a></li>
+                    <li><span class="menu_square" ></span><a href="user_reg.old.php">注册</a></li>
                     <li><span class="menu_square" ></span><a href="user_login.php">登入</a></li>
                 </ul>
             <?php endif; ?>

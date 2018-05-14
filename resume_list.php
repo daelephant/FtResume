@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 18.5.13
+ * Time: 9:49
+ */
 //session_star之前不能有任何的输出
 session_start();
 if(intval($_SESSION['uid']) < 1)
@@ -26,38 +32,73 @@ catch (Exception $exception)
 }
 //exit;
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>我的简历</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
+
+
+      <title>我的简历</title>
+
+  </head>
+    <body>
+    <!--页面内容区域-->
+    <div class="container">
+        <?php include 'header.php';?>
+        <div class="page-box">
+            <h1 class="page-title">我的简历</h1>
+            <?php if($resume_list):?>
+                <ul class="resume-list">
+                    <?php foreach ($resume_list as $item):?>
+                        <li id="rlist-<?=$item['id'];?>">
+                            <span class="menu-square-large" ></span>
+                            <a href="resume_detail.php?id=<?=$item['id'];?>" class="title middle" target="_blank"><?=$item['title']?></a>
+                            <a href="resume_detail.php?id=<?=$item['id'];?>" target="_blank"><img src="image/open_in_new.png" alt="查看"></a>
+                            <a href="resume_modify.php?id=<?=$item['id'];?>"><img src="image/mode_edit.png" alt="编辑"></a>
+                            <a data-toggle="modal" data-target="#exampleModal" href="javascript:confirm_delete('<?=$item['id'];?>');void(0);"><img src="image/close.png" alt="删除"></a>
+                        </li>
+                    <?php endforeach;?>
+                </ul>
+            <?php endif;?>
+            <p><a href="resume_add.php" class="resume-add"><img src="image/add.png" alt="添加简历"> 添加简历</a> </p>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">大象温馨提示：</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        您确定要删除本条简历么？
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary float-left" data-dismiss="modal">取消</button>
+                        <button onclick="confirm_delete('<?=$item['id'];?>')" type="button" class="btn btn-primary"  data-dismiss="modal">确定删除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面内容区域-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <!--引入CDN的js库，引入大站点的会避免加载js直接用缓存   -->
     <script src="http://lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
-</head>
-<body>
-
-    <div class="container">
-        <!--引入头部导航-->
-        <?php include 'header.php';?>
-        <h1>我的简历</h1>
-        <?php if($resume_list):?>
-        <ul class="resume_list">
-            <?php foreach ($resume_list as $item):?>
-                <li id="rlist-<?=$item['id'];?>">
-                    <span class="menu_square_large" ></span>
-                    <a href="resume_detail.php?id=<?=$item['id'];?>" class="title middle" target="_blank"><?=$item['title']?></a>
-                    <a href="resume_detail.php?id=<?=$item['id'];?>" target="_blank"><img src="image/open_in_new.png" alt="查看"></a>
-                    <a href="resume_modify.php?id=<?=$item['id'];?>"><img src="image/mode_edit.png" alt="编辑"></a>
-                    <a href="javascript:confirm_delete('<?=$item['id'];?>');void(0);"><img src="image/close.png" alt="删除"></a>
-                </li>
-            <?php endforeach;?>
-        </ul>
-        <?php endif;?>
-        <p><a href="resume_add.php" class="resume_add"><img src="image/add.png" alt="添加简历"> 添加简历</a> </p>
-    </div>
-</body>
+  </body>
 </html>
