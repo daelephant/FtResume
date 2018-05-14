@@ -52,14 +52,14 @@ catch (Exception $exception)
     <!--页面内容区域-->
     <div class="container">
         <?php include 'header.php';?>
-        <div class="page-box">
             <h1 class="page-title">我的简历</h1>
+            <div class="page-box">
             <?php if($resume_list):?>
-                <ul class="resume-list">
+                <ul class="list-group">
                     <?php foreach ($resume_list as $item):?>
-                        <li id="rlist-<?=$item['id'];?>">
-                            <span class="menu-square-large" ></span>
-                            <a href="resume_detail.php?id=<?=$item['id'];?>" class="title middle" target="_blank"><?=$item['title']?></a>
+                        <li id="rlist-<?=$item['id'];?>" class="list-group-item list-group-item-action">
+<!--                            <span class="menu-square-large" ></span>-->
+                            <a href="resume_detail.php?id=<?=$item['id'];?>" class="btn btn-light" target="_blank"><?=$item['title']?></a>
                             <a href="resume_detail.php?id=<?=$item['id'];?>" target="_blank"><img src="image/open_in_new.png" alt="查看"></a>
                             <a href="resume_modify.php?id=<?=$item['id'];?>"><img src="image/mode_edit.png" alt="编辑"></a>
                             <a data-toggle="modal" data-target="#exampleModal" href="javascript:confirm_delete('<?=$item['id'];?>');void(0);"><img src="image/close.png" alt="删除"></a>
@@ -67,7 +67,7 @@ catch (Exception $exception)
                     <?php endforeach;?>
                 </ul>
             <?php endif;?>
-            <p><a href="resume_add.php" class="resume-add"><img src="image/add.png" alt="添加简历"> 添加简历</a> </p>
+            <p><a href="resume_add.php" class="resume_add btn btn-light"><img src="image/add.png" alt="添加简历"> 添加简历</a> </p>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">

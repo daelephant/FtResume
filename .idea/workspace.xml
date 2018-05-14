@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e0c0150-9dc6-44eb-8df1-85a080a8762b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/resume_add.old.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resume_list.old.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/user_reg.old.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app.css" afterPath="$PROJECT_DIR$/app.css" />
-      <change beforePath="$PROJECT_DIR$/header.new.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/header.old.php" afterPath="$PROJECT_DIR$/header.old.php" />
-      <change beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change beforePath="$PROJECT_DIR$/index.new.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
-      <change beforePath="$PROJECT_DIR$/resume_add.php" afterPath="$PROJECT_DIR$/resume_add.php" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/resume_list.php" afterPath="$PROJECT_DIR$/resume_list.php" />
-      <change beforePath="$PROJECT_DIR$/resume_modify.new.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/user_login.new.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/user_reg.php" afterPath="$PROJECT_DIR$/user_reg.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +15,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+              <folding>
+                <marker date="1526291492626" expanded="true" signature="465:541" ph="SELECT `id`,... resume" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../FtResume_Bootstrap4/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <folding>
+                <marker date="1526289747829" expanded="true" signature="283:360" ph="SELECT `id`,... resume" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resume_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resume_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+              <folding>
+                <marker date="1526291476540" expanded="true" signature="494:585" ph="SELECT `id`,... resume" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,12 +78,12 @@
       <find>squa</find>
       <find>res</find>
       <find>resume_list</find>
-      <find>h1</find>
       <find>new</find>
       <find>我的简历</find>
       <find>resume_add</find>
       <find>confirm_delete</find>
       <find>send_form</find>
+      <find>h1</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -84,15 +120,15 @@
         <option value="$PROJECT_DIR$/user_login.new.php" />
         <option value="$PROJECT_DIR$/resume_modify.php" />
         <option value="$PROJECT_DIR$/resume_modify.new.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/user_login.php" />
         <option value="$PROJECT_DIR$/user_reg.new.php" />
         <option value="$PROJECT_DIR$/resume_list.new.php" />
-        <option value="$PROJECT_DIR$/app.css" />
         <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/resume_list.php" />
         <option value="$PROJECT_DIR$/resume_add.new.php" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/app.css" />
+        <option value="$PROJECT_DIR$/resume_list.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -104,9 +140,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="60" />
-    <option name="width" value="1931" />
+    <option name="x" value="654" />
+    <option name="y" value="64" />
+    <option name="width" value="1322" />
     <option name="height" value="935" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -144,9 +180,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user_reg.new.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FtResume_Bootstrap4/resume_list.php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/user_reg.new.php" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../FtResume_Bootstrap4/resume_list.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -183,7 +219,7 @@
       <workItem from="1525945259465" duration="669000" />
       <workItem from="1526176287212" duration="10903000" />
       <workItem from="1526248978054" duration="28000" />
-      <workItem from="1526264444171" duration="12011000" />
+      <workItem from="1526264444171" duration="14521000" />
     </task>
     <task id="LOCAL-00001" summary="add the Resume list">
       <created>1525861915326</created>
@@ -220,16 +256,23 @@
       <option name="project" value="LOCAL" />
       <updated>1526265722368</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="renew bootstrap4 finish">
+      <created>1526289179044</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526289179044</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57547000" />
+    <option name="totallyTimeSpent" value="60057000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="60" width="1931" height="935" extended-state="0" />
+    <frame x="654" y="64" width="1322" height="935" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15313935" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996207" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -261,7 +304,8 @@
     <MESSAGE value="Resume stage ONE" />
     <MESSAGE value="Bootstrap.new.php" />
     <MESSAGE value="renew bootstrap4" />
-    <option name="LAST_COMMIT_MESSAGE" value="renew bootstrap4" />
+    <MESSAGE value="renew bootstrap4 finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="renew bootstrap4 finish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -270,14 +314,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resume_modify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resume_modify.new.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
@@ -320,7 +356,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
           <caret line="57" column="67" lean-forward="false" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="172" />
-          <folding />
+          <folding>
+            <marker date="1526264426225" expanded="true" signature="529:574" ph="SELECT * FRO... resume" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -386,7 +424,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1456">
           <caret line="57" column="67" lean-forward="false" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="172" />
-          <folding />
+          <folding>
+            <marker date="1526264426225" expanded="true" signature="529:574" ph="SELECT * FRO... resume" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -409,8 +449,7 @@
         <state relative-caret-position="1232">
           <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
           <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-            <marker date="1526288270919" expanded="true" signature="494:585" ph="SELECT `id`,... resume" />
+            <marker date="1526291476540" expanded="true" signature="494:585" ph="SELECT `id`,... resume" />
           </folding>
         </state>
       </provider>
@@ -503,14 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume_modify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resume_modify.new.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -559,29 +590,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-          <folding>
-            <marker date="1526265356622" expanded="true" signature="465:541" ph="SELECT `id`,... resume" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -601,17 +614,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1525933965551" expanded="true" signature="408:499" ph="SELECT `id`,... resume" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-            <marker date="1526288270919" expanded="true" signature="494:585" ph="SELECT `id`,... resume" />
           </folding>
         </state>
       </provider>
@@ -656,12 +658,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resume_modify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="77" />
+          <folding>
+            <marker date="1526264426225" expanded="true" signature="529:574" ph="SELECT * FRO... resume" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resume_add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
+        <state relative-caret-position="952">
           <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FtResume_Bootstrap4/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
-            <element signature="e#1629#1635#0#HTML" expanded="true" />
+            <marker date="1526289747829" expanded="true" signature="283:360" ph="SELECT `id`,... resume" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+          <folding>
+            <marker date="1526291476540" expanded="true" signature="494:585" ph="SELECT `id`,... resume" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+          <folding>
+            <marker date="1526291492626" expanded="true" signature="465:541" ph="SELECT `id`,... resume" />
           </folding>
         </state>
       </provider>
