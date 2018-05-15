@@ -5,7 +5,7 @@
  * Date: 18.5.13
  * Time: 9:49
  */
-//设置PHP报错机制：除了NOTICE报错其他
+//设置PHP报错机制：除了NOTICE报错其他FangFrame
 error_reporting(E_ALL ^ E_NOTICE);
 //session_star之前不能有任何的输出
 session_start();
