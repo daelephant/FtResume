@@ -46,11 +46,11 @@ $md = new Parsedown();
     <title><?=$resume['title'];?></title>
 </head>
 <body>
-<div class="alert alert-info" role="alert">
-<!--    <h4 class="alert-heading">Well done!</h4>-->
-    <p><?=$md->text($resume['content']);?></p>
-    <hr>
-    <p class="mb-0">感谢您的浏览.</p>
+<div class="jumbotron">
+<!--    <h1 class="display-3">Hello, world!</h1>-->
+    <p class="lead"><?=$md->text($resume['content']);?></p>
+    <hr class="my-4">
+    <p>感谢您的浏览.</p>
 </div>
 
 <!-- Optional JavaScript -->
@@ -63,3 +63,5 @@ $md = new Parsedown();
 <script src="http://lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
 </body>
 </html>
+
+
