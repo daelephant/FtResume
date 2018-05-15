@@ -15,7 +15,8 @@ if(intval($_SESSION['uid']) < 1)
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css" >
+<!-- 添加bootstrap4的基本样式，只需要引入一个css文件即可：     -->
+      <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css" >
 
       <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
 

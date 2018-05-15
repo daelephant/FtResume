@@ -17,7 +17,7 @@ function confirm_delete() {
     //resume_remove.php?id=
     //  alert(id);
     var id = window.res;
-    if(id>1)
+    if(id>=1)
     {
         console.log(id);
         $.post('resume_remove.php?id='+id,null,function (data) {
