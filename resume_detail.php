@@ -47,7 +47,6 @@ $md = new Parsedown();
 </head>
 <body>
 <div class="jumbotron">
-<!--    <h1 class="display-3">Hello, world!</h1>-->
     <p class="lead"><?=$md->text($resume['content']);?></p>
     <hr class="my-4">
     <p>感谢您的浏览.</p>
