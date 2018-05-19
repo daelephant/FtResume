@@ -16,6 +16,8 @@ define("ROOT",__DIR__);//在所有地方用ROOT常量代表web的根
 define( "FROOT" , ROOT. DS . "framework" );
 define( "VIEW" , FROOT. DS . "view" );
 
+error_reporting(E_ALL ^ E_NOTICE);//入口文件设置报错机制
+
 include 'vendor/autoload.php';//本地文件、第三方库、未来写的类都引进来了
 $GLOBALS['m'] = $m = v('m') ? v('m') : 'resume';
 $class = ucfirst( strtolower($m));//upper case 大写  lower case 小写 ，每个单词的首字母转换为大写：ucwords()，所有 字母变大写：strtoupper()

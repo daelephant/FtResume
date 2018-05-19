@@ -17,8 +17,8 @@
     <!--页面内容区域-->
     <div class="container">
         <div class="page-box">
-            <h1 class="page-title">用户登入</h1>
-            <form action="user_login_check.php" id="form_login" method="post" onsubmit="send_form('form_login');return false;">
+            <h1 class="page-title"><?php echo $title;?></h1>
+            <form action="_enter.php?m=user&a=login_check" id="form_login" method="post" onsubmit="send_form('form_login');return false;">
                 <div id="form_login_notice" class="form_info"></div>
                 <div class="form-group">
                     <input type="text" name="email" placeholder="Email" class="form-control"/>
@@ -41,5 +41,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+<!--    引入CDN的js库，引入大站点的会避免加载js直接用缓存-->
+    <script src="http://lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
   </body>
 </html>
