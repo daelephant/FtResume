@@ -22,7 +22,7 @@ if( mb_strlen( $content ) < 10 ) die("简历内容不能少于10个字符");
 //连接数据库
 try
 {
-    $dbh = new PDO('mysql:host=127.0.0.1;dbname=fangtangdb', 'root', 'root');
+    $dbh = new PDO('mysql:host=mysql.ftqq.com;dbname=fangtangdb', 'php', 'fangtang');
     //设置PDO报错详情，不然默认的是什么也不做，这样设置后会检测到PDO连接错误信息
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
