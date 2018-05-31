@@ -49,7 +49,7 @@ function get_render_content($data,$template=null)
 
     ob_start();
 
-    //extract() 函数从数组中将变量导入到当前的符号表。 该函数使用数组键名作为变量名,使用数组键值作为变量值。
+    //extract() 函数从数组中将变量导入到当前的符号表。 该函数使用数组键名作为变量名,使用数组键值作为变量值。z
     extract($data);
     require $template;
     $out = ob_get_contents();//获取缓存区的数据

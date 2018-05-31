@@ -54,6 +54,7 @@ class User
         $_SESSION['email'] = $email;
         $_SESSION['uid'] = $user['id'];
 
+   die("登入成功<script>location='resume_list.php'</script>");
 
 
     }

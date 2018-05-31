@@ -1,14 +1,17 @@
 {
     "name": "fangtang/cv",
-    "description": "simple resume system",
-    "type": "project",
+    "description": "resume sys",
+    "type": ":project",
     "require": {
+        "erusev/parsedown": "^1.7"
+    },
+    "require-dev": {
         "erusev/parsedown": "^1.7"
     },
     "authors": [
         {
-            "name": "daelephant",
-            "email": "chengyinxiang93@163.com"
+            "name": "yin",
+            "email": "2224168716@qq.com"
         }
     ],
     "autoload":
@@ -20,9 +23,9 @@
         }
     },
     "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://packagist.phpcomposer.com"
+    "packagist": {
+        "type": "composer",
+        "url": "https://packagist.phpcomposer.com"
         }
     }
 }
