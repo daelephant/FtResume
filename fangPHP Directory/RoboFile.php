@@ -6,11 +6,13 @@
  */
 class RoboFile extends \Robo\Tasks
 {
+    // define public methods as commands
     /**
-     * 显示代码重复的地方
-     */
+    * show jscpd dif1
+    */
     public function find_dfiles()
     {
-        $this->_exec('jscpd --files="data/web/*.php"');
+    	$this->_exec('jscpd --files="data/web/FtResume/*.php"');
     }
+
 }
