@@ -6,10 +6,15 @@
  * Time: 06:52
  */
 
-$GLOBALS['FFCONFIG']['MYSQL_HOST'] = 'mysql.ftqq.com';
-$GLOBALS['FFCONFIG']['MYSQL_USER'] = 'php';
-$GLOBALS['FFCONFIG']['MYSQL_PASSWORD'] = 'fangtang';
+$GLOBALS['FFCONFIG']['MYSQL_HOST'] = 'localhost';
+$GLOBALS['FFCONFIG']['MYSQL_USER'] = 'root';
+$GLOBALS['FFCONFIG']['MYSQL_PASSWORD'] = 'root';
 $GLOBALS['FFCONFIG']['MYSQL_DBNAME'] = 'fangtangdb';
+
+//$GLOBALS['FFCONFIG']['MYSQL_HOST'] = 'mysql.ftqq.com';
+//$GLOBALS['FFCONFIG']['MYSQL_USER'] = 'php';
+//$GLOBALS['FFCONFIG']['MYSQL_PASSWORD'] = 'fangtang';
+//$GLOBALS['FFCONFIG']['MYSQL_DBNAME'] = 'fangtangdb';
 $GLOBALS['FFCONFIG']['MYSQL_PORT'] = 3306;
 $GLOBALS['FFCONFIG']['DSN'] = 'mysql:host=' . $GLOBALS['FFCONFIG']['MYSQL_HOST'] . ';port=' . $GLOBALS['FFCONFIG']['MYSQL_PORT'] . ';dbname='.$GLOBALS['FFCONFIG']['MYSQL_DBNAME'];
 
